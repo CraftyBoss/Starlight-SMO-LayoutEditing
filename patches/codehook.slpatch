@@ -1,0 +1,18 @@
+[version=100, target=main]
+StageScene::control+18:
+    BL stageSceneHook
+
+5359E0: // GameSystem::init 
+    BL tryInitSocket
+//B72D94:
+//    B exception_handler
+B59E28: // sead::systen::print
+    B LOG
+
+//1DE568:
+//    NOP
+//1DE580:
+//    NOP
+
+//1DE4F8:
+//    RET

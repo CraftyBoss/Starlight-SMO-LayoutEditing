@@ -1,0 +1,9 @@
+{
+    global:
+        _Z14stageSceneHookv;
+        _Z12drawMainHookv;
+        _Z13tryInitSocketv;
+        _Z17exception_handlerPN2nn2os17UserExceptionInfoE;
+        _Z3LOGPKcz;
+    local: *;
+};
