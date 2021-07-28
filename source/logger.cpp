@@ -1,6 +1,6 @@
 #include "logger.hpp"
 
-#define HOST_IP          "10.0.0.224" // My IP:  //Smant IP: "192.168.0.62"
+#define HOST_IP          "0.0.0.0" // Enter your PCs IP Address Here
 #define PORT             (u16)1337
 
 #define	MSG_DONTWAIT	 0x00000080
