@@ -1,3 +1,5 @@
+# Original Bryce README
+
 # Starlight — SMO Example
 
 This repo contains a barebones example of a Super Mario Odyssey v1.0.0 mod written (for the most part) in C++.
