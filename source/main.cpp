@@ -12,8 +12,6 @@
 #include "sead/prim/seadSafeString.h"
 #include "types.h"
 
-#include "log.h"
-
 #define RAD(deg) (deg * (M_PI / 180)) // converts Degrees to Radians
 #define DEG(rad) (rad * (180 / M_PI)) // converts Radians to Degrees
 
@@ -81,8 +79,6 @@ void stageSceneHook() {
     }
 
     if(showMenu) {
-
-        // \nLeft Stick Input:\nX: %f\nY: %f\nRight Stick Input:\nX: %f\nY: %f  inputLeft->x, inputLeft->y, inputRight->x, inputRight->y
 
         sead::Vector3f eulerAngles = QuatToEuler(playerQuat);
 
