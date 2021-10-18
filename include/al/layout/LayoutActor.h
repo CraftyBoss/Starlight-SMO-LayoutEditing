@@ -7,14 +7,11 @@
 #include "al/audio/AudioKeeper.h"
 #include "al/effect/EffectKeeper.h"
 #include "al/scene/SceneObjHolder.h"
+#include "al/message/IUseMessageSystem.h"
 
 namespace al {
 
     class IUseLayoutAction {
-
-    };
-
-    class IUseMessageSystem {
 
     };
 

@@ -1,7 +1,7 @@
 #ifndef SEAD_CRITICAL_SECTION_H_
 #define SEAD_CRITICAL_SECTION_H_
 
-#include <nn/os.h>
+#include <nn/os.hpp>
 
 #include <sead/basis/seadTypes.h>
 #include <sead/heap/seadDisposer.h>
