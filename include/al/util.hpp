@@ -113,6 +113,10 @@ namespace al
     char const *getActionFrame(al::LiveActor const *);
 
     sead::Vector3f *getCameraPos(al::IUseCamera const *, int);
+
+    float calcSpeed(al::LiveActor const *);
+    float calcSpeedH(al::LiveActor const *);
+    float calcSpeedV(al::LiveActor const *);
     
     // setters
 

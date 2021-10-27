@@ -12,6 +12,7 @@
 #include "PlayerAnimator.h"
 #include "HackCap.h"
 #include "PlayerModelKeeper.h"
+#include "PlayerRecoverySafetyPoint.h"
 
 #define PACTORSIZE 0xC8
 
@@ -28,5 +29,6 @@ class PlayerActorHakoniwa : public PlayerActorBase , public IUseDimension {
         PlayerModelKeeper *mPlayerModelKeeper; // 0x158
         unsigned char padding_168[0x08];
         PlayerAnimator *mPlayerAnimator; // 0x168 
-
+        undefined padding_270[0x100];
+        PlayerRecoverySafetyPoint *mPlayerRecoverPoint; // 0x270
 };
