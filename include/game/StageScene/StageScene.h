@@ -8,19 +8,13 @@
 class StageScene : public al::Scene
 {
     public:
-        StageScene();
 
-        virtual ~StageScene();
-        virtual void init(const al::SceneInitInfo &);
-        virtual void appear();
-        virtual void kill();
-        
-        virtual void control();
-        virtual void drawMain();
-
-        bool isEnableSave(void) const;
-
-        // 0xE0 stageName
+        bool isPause() const;
+        // 0x88 StageResourceKeeper *
+        // 0x90 LiveActorKit *
+        // 0x98 LayoutKit *
+        // 0xA0 SceneObjHolder *
+        // 0xA8 SceneStopCtrl *
 
         unsigned char padding_2D0[0x2D0 - INHERITSIZE];
         GameDataHolderAccessor *mHolder; // 0x2D0

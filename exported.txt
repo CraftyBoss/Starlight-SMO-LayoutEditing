@@ -1,5 +1,7 @@
 {
     global:
         _Z14stageSceneHookv;
+        _Z14setupDebugMenuP10GameSystem;
+        _Z12drawMainHookP16HakoniwaSequencePN4sead8ViewportEPNS1_11DrawContextE;
     local: *;
 };

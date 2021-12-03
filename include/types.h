@@ -25,7 +25,10 @@ typedef unsigned long int ulong;
 
 typedef unsigned int        usize_t;
 
-typedef unsigned char uChar;
+typedef unsigned long int ulong;
+typedef unsigned short int ushort;
+typedef unsigned int uint;
+typedef unsigned char uchar;
 
 typedef unsigned char   undefined;
 typedef unsigned char    undefined1;

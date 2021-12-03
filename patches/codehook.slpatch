@@ -1,3 +1,15 @@
 [version=100, target=main]
 StageScene::control+18:
     BL stageSceneHook
+
+// overwrites some move instructions with hook code, which reimplements the move instructions at the end of the code
+5359DC: // GameSystem::init+18C
+    MOV X0, X19 // move GameSystem to arg register
+    BL setupDebugMenu
+    
+// replaces an execute draw call with custom hook that handles execute draw itself after running draw code
+50F258: // HakoniwaSequence::drawMain+84
+    MOV X0, X19 // HakoniwaSequence
+    MOV X1, SP // viewport
+    MOV X2, X20 // drawContext
+    BL drawMainHook

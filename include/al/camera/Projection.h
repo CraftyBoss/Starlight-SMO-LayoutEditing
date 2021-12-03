@@ -4,7 +4,7 @@ namespace al
 {
     class Projection {
         public:
-            float getFovy(void);
+            float getFovy(void) const;
             void setFovy(float);
     };
 };

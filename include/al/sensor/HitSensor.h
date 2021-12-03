@@ -1,11 +1,14 @@
 #pragma once
 
-#include "al/LiveActor/LiveActor.h"
 #include "al/sensor/SensorHitGroup.h"
 #include "sead/math/seadVector.h"
+#include "sead/math/seadMatrix.h"
 
 namespace al
 {
+
+    class LiveActor;
+
     class HitSensor
     {
     public:
@@ -23,7 +26,7 @@ namespace al
 
         const char* mName; // _0
         int _8;
-        float _C;
+        float _unkC;
         float _10;
         float _14;
         float _18;
@@ -34,8 +37,6 @@ namespace al
         al::SensorHitGroup* mHitGroup; // _30
         bool mIsValidBySystem; // _38
         bool mIsValid; // _39
-        unsigned int _3A;
-        unsigned short _3E;
         al::LiveActor* mParentActor; // _40
         const sead::Vector3<float>* mFollowPos; // _48
         const sead::Matrix34<float>* mFollowMtx; // _50
