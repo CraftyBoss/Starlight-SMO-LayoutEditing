@@ -1,6 +1,6 @@
-# Super Mario Odyssey - Custom Layout Tool
+# Super Mario Odyssey - sead::Textwriter Re-implementation
 
-This mod introduces edits to Super Mario Odyssey's HUD that allows for users to view any value added by default to the HUD for assistance in various applications. Its main purpose is to demonstrate the ability to modify existing BFLYTs to add Text Panes that can be targeted with the use of the function `al::setPaneString`. 
+This mod aims to fully restore use of sead's Textwriter class, which allows for data to be written directly to the viewport using `sead::TextWriter::printf`. To find the example code that this repository contains, navigate to the `debugMenu.cpp` file in source/, which contains functions for creating and using the text writer class (currently the only function that can properly display data to the viewport is `drawMainHook`).
 
 This repo contains a pre-compiled build of the current source code. It can be downloaded in the [Releases](https://github.com/CraftyBoss/Starlight-SMO-LayoutEditing/releases).
 
