@@ -1,14 +1,8 @@
-# Original Bryce README
+# Super Mario Odyssey - Custom Layout Tool
 
-# Starlight — SMO Example
+This mod introduces edits to Super Mario Odyssey's HUD that allows for users to view any value added by default to the HUD for assistance in various applications. Its main purpose is to demonstrate the ability to modify existing BFLYTs to add Text Panes that can be targeted with the use of the function `al::setPaneString`. 
 
-This repo contains a barebones example of a Super Mario Odyssey v1.0.0 mod written (for the most part) in C++.
-It is a fork of [Starlight](https://github.com/shadowninja108/Starlight), an awesome project geared toward mod creation for Splatoon 2.
-
-The mod itself is the same as the one in [Responding to Controller Inputs in Super Mario Odyssey](https://brycewithfiveunderscores.com/posts/accessing-controls/) (teleport Mario to y=0 on Left D-Pad press), so as to act as a good comparison between an assembly-based implementation and a C++ one.
-
-The changes in this fork are made incrementally & intentionally, with the goal of being a working example of what specifically needs to be updated in Starlight in order to adapt it to other games. You can see the required steps in the form of
-[Pull Requests](https://github.com/brycewithfiveunderscores/Starlight-SMO-Example/pulls?q=label%3Ainitial-change+sort%3Acreated-asc), each of which has a description of the change, and occasionally code review comments describing specific details.
+This repo contains a pre-compiled build of the current source code. It can be downloaded in the [Releases](https://github.com/CraftyBoss/Starlight-SMO-LayoutEditing/releases).
 
 ## Prerequisites
 
@@ -33,17 +27,20 @@ DEVKITPRO=/opt/devkitpro/ make
 
 ## Installing (Atmosphère)
 
-After a successful build, transfer:
-
-- `Starlight-SMO-Example100.nso` to `/atmosphere/contents/0100000000010000/exefs/subsdk1` (note: no extension)
-- `starlight_patch_100/3CA12DFAAF9C82DA064D1698DF79CDA1.ips` to `/atmosphere/exefs_patches/starlight_patch_100/3CA12DFAAF9C82DA064D1698DF79CDA1.ips`
+After a successful build, simply transfer the `atmosphere` folder located inside `starlight_patch_100` to the root of your switch's SD card.
 
 ---
+
+# Credits
+- [OdysseyDecomp](https://github.com/shibbo/OdysseyDecomp)
+- [OdysseyReversed](https://github.com/shibbo/OdysseyReversed)
+- [open-ead](https://github.com/open-ead/sead) sead Headers
+- [Bryce](https://github.com/brycewithfiveunderscores/Starlight-SMO-Example/) Original Starlight fork for SMO
 
 # Starlight (Original README)
 An enviroment for linking to Splatoon 2 executable and implementing hooks.
 
-# Contributors
+# Starlight Contributors
 - [3096](https://github.com/3096)
 - [khang06](https://github.com/khang06)
 - [OatmealDome](https://github.com/OatmealDome)
@@ -52,6 +49,6 @@ An enviroment for linking to Splatoon 2 executable and implementing hooks.
 - [shibbo](https://github.com/shibbo) - Repo based on their work on OdysseyReversed
 - [Thog](https://github.com/Thog) - Expertise in how rtld is implemented
 
-# Credits
+# Starlight Credits
 - devkitA64
 - libnx - switch build rules
